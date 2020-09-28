@@ -17,7 +17,7 @@ CREATE TABLE order1
 (
     order_id serial primary key,
     order_number varchar(30) not null,
-    order_date varchar(30) not null,
+    order_date date not null,
     product_id serial not null,
     client_id serial not null,
     foreign key (product_id) references product (product_id),
